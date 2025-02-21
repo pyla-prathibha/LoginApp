@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block body %}
+    <div class="text-center mt-5">
+        <h1 class="mb-3">Welcome to My Symfony App</h1>
+        <p class="lead">Please login or register to continue.</p>
+        <div class="mt-4">
+            <a href="{{ path('app_login') }}" class="btn btn-primary btn-lg">Login</a>
+            <a href="{{ path('app_register') }}" class="btn btn-success btn-lg">Register</a>
+        </div>
+    </div>
+{% endblock %}
